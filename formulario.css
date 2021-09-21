@@ -1,0 +1,41 @@
+body{
+  font-family: 'Teko', sans-serif;
+}
+span{
+  display: none;
+  color: red;
+}
+input, select {
+  padding: 8px
+}
+input:invalid:required {
+  background-image: linear-gradient(to right, rgb(238, 236, 106), rgb(146, 146, 134));
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input:valid {
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    padding: 1.5rem;
+    background: #fafafa;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  main {
+    margin: 3rem;
+    padding: 1.5rem;
+    background: #fafafa;
+  }
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
